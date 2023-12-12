@@ -1,8 +1,5 @@
 package com.example.geekchat;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.GeekChat.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -66,6 +66,7 @@ public class login extends AppCompatActivity {
                             } catch (Exception e) {
                                 Toast.makeText(login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
+                            
                         }else {
                             Toast.makeText(login.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
